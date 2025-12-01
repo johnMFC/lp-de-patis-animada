@@ -1,4 +1,4 @@
-*,*::after,*::before{
+k*,*::after,*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,3 +42,8 @@ h2{
   line-height: 1.2;
   
 } 
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
