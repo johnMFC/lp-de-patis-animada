@@ -2,4 +2,5 @@
 @import url('../style/header.css');
 @import url('../style/hero.css');
 @import url('../style/banner.css');
-@import url('./gallery.css')
+@import url('./gallery.css');
+@import url(footer.css)
