@@ -1,0 +1,107 @@
+/*celular pequeno */
+
+@media (max-width: 480px){
+  :root{ 
+    --text-xl:2.5rem;   /*título menor no celular*/
+    --text-lg:1.8rem;
+  }
+
+  section.hero,
+  section.gallery
+  footer{
+     padding: 2rem 1rem;   /*menos padding na lateral*/
+  }
+
+ .hero .buttons{
+   flex-direction: column;
+   align-items: stretch;
+   gap: 1rem;
+ }
+
+ .hero .button.buy{
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.hero .button.play span{
+  padding: 1.25rem;
+}
+
+footer{
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+footer nav{
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer .social-links{
+  justify-content: center;
+}
+}
+
+/*Celular grande e tablet portatíl */
+
+@media (max-width : 768px){
+  :root{
+    --text-xl:3.5rem;
+  }
+
+  section.hero{
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero > div:first-child{
+    order: 2; /*texto vem depois da imagem no mobile*/
+  }
+
+  .hero > div:last-child{
+    order:1;
+    max-width: 25rem;/*imagem menor */
+    height: auto;
+  }
+
+  .hero .content{
+    width: 100%;
+    height: auto;
+  }
+
+  .hero img[src*="patins"],
+  .hero img[src*="Ellipse"] {
+    width: 90%; 
+    max-width: 22rem;
+  }
+
+  /*GALERIA VIRA COLUNA NO CELULAR*/
+
+  section.gallery  .content{
+    grid-template-areas:
+    
+    "A"
+    "B"
+    "C"
+    "D";
+    gap: 1.5rem;
+  }
+
+  section.gallery figure > img{
+    height: 20rem;
+  }
+
+  .banner .rolling {
+    animation-duration: 30s;
+  }
+}
+
+/*Tablet landscape (até 1024px) - opcional, ajuste finos*/
+
+@media (max-width: 1024px){
+  .hero > div:last-child{
+    max-width: 26rem;
+  }
+}
